@@ -8,15 +8,15 @@ create SQL postgreSQL:
   - create database t3h_db; -->  sua file Setting.py
 
   - DATABASES = {
+  
     'default': {
+    
         'ENGINE': 'django.db.backends.postgresql',
+        
         'NAME': 't3h_db',
-        # 'USER': 'myprojectuser',
-        # 'PASSWORD': 'password',
-        # 'HOST': 'localhost',
-        # 'HOST': '127.0.0.1',
-        # 'PORT': '5432',
+        
        }
+       
       }
 
 Cai dat module psycopg2:
