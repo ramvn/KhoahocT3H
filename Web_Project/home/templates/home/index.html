@@ -1,0 +1,22 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+<div class="container videos-list pt-3">
+    <h1 class="mb-4">Đây là Trang Giao Diện Chung</h1>
+    {% for item in object_list %}
+    <div class="media" mb-3>
+           <a href=""><img src="{{ item.picture.url }}" class="mr-3" alt="" width="120"></a>
+        <div class="media-body">
+            <h5 class="mt-0"><a href="">{{ item.name }}</a></h5> 
+            <ul>
+                <li>Educator: <a href="">{{ item.educator }}</a></li>
+                <li>So Bai Hoc: {{ item.num_lessons }} bai</li>
+            </ul>
+            
+            {{ item.excerpt }}
+            
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
